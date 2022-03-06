@@ -22,7 +22,7 @@ jobs:
           - 5432:5432
     env:
       DATABASE_URL: postgresql://larkspur:larkspur@localhost:5432/larkspur_test
-      SECRET_KEY: "3f9d2c7a1e6b48d05c93a7f21e4d8b60"
+      SECRET_KEY: ${{ secrets.LARKSPUR_SECRET_KEY }}
       PAGE_SIZE: "25"
     steps:
       - uses: actions/checkout@v4
