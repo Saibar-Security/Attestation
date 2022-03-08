@@ -20,5 +20,8 @@ docker compose up --build
 curl localhost:8000/health
 ```
 
+Known issues are tracked in `docs/KNOWN_ISSUES.md` (see #412 — the March
+export bundle has checksums we cannot account for).
+
 See `docs/API.md` for the full API, `docs/ARCHITECTURE.md` for internals, and
 `docs/EXPORTS.md` for the export bundle format.
